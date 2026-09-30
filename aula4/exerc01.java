@@ -1,4 +1,4 @@
-package aula6;
+package aula4;
 import java.util.Arrays;
 
 public class exerc01 {

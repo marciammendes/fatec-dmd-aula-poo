@@ -1,4 +1,4 @@
-package aula5;
+package aulaGit;
 
 public class exerc02v2 {
 	public static void main (String[] args) {
