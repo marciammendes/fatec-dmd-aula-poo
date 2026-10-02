@@ -1,10 +1,9 @@
 package aula4;
-
 import java.util.Arrays;
 
 public class exerc04 {
     public static void main(String[] args) {
-        // 1. Especifica a quantidade de linhas (ex: 5 linhas)
+
         int[][] matriz = new int[8][]; 
         int valor = 1;
         
