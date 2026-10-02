@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class exerc05Basico {
 
 	private static Scanner sc = new Scanner(System.in);
-	private static boolean erro = false;
 
 	public static void main(String[] args) {
 		int opcao;
@@ -14,7 +13,6 @@ public class exerc05Basico {
 			opcao = mostrarMenu();
 
 			if (opcao >= 1 && opcao <= 4) {
-				erro = false;
 				
 				double num = lerNumero();
 				double proximo = lerNumero();
@@ -80,7 +78,6 @@ public class exerc05Basico {
 		case 4:
 			if (b == 0) {
 				System.out.println("\nErro: Não é possível dividir por zero.");
-				erro = true;
 				return 0;
 			}
 			return dividir(a, b);
