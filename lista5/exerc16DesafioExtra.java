@@ -1,11 +1,9 @@
-package lista4;
+package lista5;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class exerc20 {
-	
-	private static Scanner sc = new Scanner (System.in);
-
+public class exerc16DesafioExtra {
 	public static void main(String[] args) {
 		int[][] matriz = new int[3][3];
 		
@@ -19,7 +17,14 @@ public class exerc20 {
 			System.out.println(Arrays.toString(matriz[i]));
 			}
 		System.out.println();
-		
+		somaLinha(matriz);
+		System.out.println();
+		somaColuna(matriz);
+	}
+	
+	private static Scanner sc = new Scanner (System.in);
+	
+	private static void somaLinha (int[][] matriz) {
 		for (int i = 0; i < matriz.length; i++) {
 			int somaLinha = 0;
 			for (int j = 0; j < matriz.length; j++) {
@@ -27,8 +32,9 @@ public class exerc20 {
 			}
 			System.out.println("Soma da linha " + (i + 1) + " = " + somaLinha);
 		}
-
-		System.out.println();
+	}
+	
+	private static void somaColuna (int[][] matriz) {
 		for (int i = 0; i < matriz.length; i++) {
 			int somaColuna = 0;
 			for (int j = 0; j < matriz.length; j++) {
